@@ -52,8 +52,6 @@ Clone or Download the Repository
 
 git clone https://github.com/kbedford/VMM-Config-Backup.git
 
-  cd configuration-backup
-
   Install Dependencies
   Ensure the paramiko library is installed:
 
@@ -63,10 +61,9 @@ git clone https://github.com/kbedford/VMM-Config-Backup.git
 
 Open the script and update the following variables with your device's SSH credentials:
 
-Run the Script
-Execute the script using:
-
-python3 configuration_backup.py
+    Run the Script
+    Execute the script using:
+    python3 configuration_backup.py
 
 **Verify Output**
 
