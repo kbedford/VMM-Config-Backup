@@ -1,14 +1,6 @@
 **Overview**
 
-This Python script automates the process of backing up configurations from network devices. It performs the following tasks:
-
-Retrieves IP addresses of devices using the vmm ip command.
-
-Check the availability of these devices using the vmm ping command.
-
-Connects to alive devices via SSH and captures their configurations.
-
-Saves the configurations to a timestamped file for record-keeping.
+This Python script automates the process of backing up configurations from network devices. It performs the following tasks: Retrieves IP addresses of devices using the vmm ip command. Check the availability of these devices using the vmm ping command. Connects to alive devices via SSH and captures their configurations. Saves the configurations to a timestamped file for record-keeping.
 
 **Prerequisites**
 
@@ -60,14 +52,15 @@ Clone or Download the Repository
 
 git clone https://github.com/kbedford/VMM-Config-Backup.git
 
-cd configuration-backup
+  cd configuration-backup
 
-Install Dependencies
-Ensure the paramiko library is installed:
+  Install Dependencies
+  Ensure the paramiko library is installed:
 
   pip install paramiko
 
-Update Credentials
+**Update Credentials**
+
 Open the script and update the following variables with your device's SSH credentials:
 
 Run the Script
