@@ -1,0 +1,2738 @@
+
+Device: PTX1_1_RE0
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX1-1-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.102.17/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.102.8/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.102.17/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.2017.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:102:17/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.102.17
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+set system services netconf ssh
+set system services netconf rfc-compliant
+set chassis network-services enhanced-ip
+
+{master}
+root@PTX1-1-RE0-re0> 
+
+Device: PTX1_1_RE01
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX1-1-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.102.17/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.102.8/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.102.17/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.2017.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:102:17/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.102.17
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+set system services netconf ssh
+set system services netconf rfc-compliant
+set chassis network-services enhanced-ip
+
+{backup}
+root@PTX1-1-RE0-re1> 
+
+Device: PTX1_1_FPC0_CSPP
+========================================
+show configuration | display set | no-more
+[?2004lCommand 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+Command 'display' not found, but can be installed with:
+no-more: command not found
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+[?2004hroot@PTX1-1-FPC0-CSPP:~# 
+
+Device: PTX2_2_RE0
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX2-2-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.107.51/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.102.27/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.107.51/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.7051.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:107:51/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.107.51
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+
+{master}
+root@PTX2-2-RE0-re0> 
+
+Device: PTX2_2_RE01
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX2-2-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.107.51/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.102.27/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.107.51/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.7051.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:107:51/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.107.51
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+
+{backup}
+root@PTX2-2-RE0-re1> 
+
+Device: PTX2_2_FPC0_CSPP
+========================================
+show configuration | display set | no-more
+[?2004lCommand 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+Command 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+no-more: command not found
+[?2004hroot@PTX2-2-FPC0-CSPP:~# 
+
+Device: PTX3_3_RE0
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX3-3-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.101.213/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.107.198/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.101.213/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.1213.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:101:213/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.101.213
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+
+{master}
+root@PTX3-3-RE0-re0> 
+
+Device: PTX3_3_RE01
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX3-3-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.101.213/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.107.198/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.101.213/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.1213.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:101:213/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.101.213
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+
+{backup}
+root@PTX3-3-RE0-re1> 
+
+Device: PTX3_3_FPC0_CSPP
+========================================
+show configuration | display set | no-more
+[?2004lCommand 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+Command 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+no-more: command not found
+[?2004hroot@PTX3-3-FPC0-CSPP:~# 
+
+Device: PTX4_4_RE0
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX4-4-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.101.243/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.102.36/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.101.243/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.1243.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:101:243/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.101.243
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+
+{master}
+root@PTX4-4-RE0-re0> 
+
+Device: PTX4_4_RE01
+========================================
+show configuration | display set | no-more 
+set version 23.4R2.14-EVO
+set groups global system host-name PTX4-4-RE0
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions admin
+set groups global system login class wheel permissions clear
+set groups global system login class wheel permissions field
+set groups global system login class wheel permissions floppy
+set groups global system login class wheel permissions interface
+set groups global system login class wheel permissions maintenance
+set groups global system login class wheel permissions network
+set groups global system login class wheel permissions reset
+set groups global system login class wheel permissions routing
+set groups global system login class wheel permissions shell
+set groups global system login class wheel permissions snmp
+set groups global system login class wheel permissions system
+set groups global system login class wheel permissions trace
+set groups global system login class wheel permissions view
+set groups global system login class readonly permissions interface
+set groups global system login class readonly permissions network
+set groups global system login class readonly permissions routing
+set groups global system login class readonly permissions system
+set groups global system login class readonly permissions trace
+set groups global system login class readonly permissions view
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user fregress uid 929
+set groups global system login user fregress class superuser
+set groups global system login user fregress shell csh
+set groups global system login user fregress authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login user remote uid 9999
+set groups global system login user remote class superuser
+set groups global system login user remote shell csh
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system services netconf ssh
+set groups global system services ssh root-login allow
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system backup-router 10.49.127.254
+set groups global system backup-router destination 0.0.0.0/0
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.150.129 secret "$9$GoUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.233.81
+set groups global system ntp server 66.129.233.81
+set groups global chassis dump-on-panic
+set groups global chassis fpc 0 pic 0 pic-mode 100G
+set groups global interfaces re0:mgmt-0 unit 0 family inet address 10.49.101.243/19
+set groups global interfaces re1:mgmt-0 unit 0 family inet address 10.49.102.36/19
+set groups global interfaces lo0 unit 0 family inet address 128.49.101.243/32
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.1243.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:101:243/128 primary
+set groups global interfaces et-0/0/0 speed 400g
+set groups global interfaces et-0/0/1 speed 400g
+set groups global interfaces et-0/0/2 speed 400g
+set groups global interfaces et-0/0/3 speed 400g
+set groups global interfaces et-0/0/4 speed 400g
+set groups global interfaces et-0/0/5 speed 400g
+set groups global interfaces et-0/0/6 speed 400g
+set groups global interfaces et-0/0/7 speed 400g
+set groups global interfaces et-0/0/8 speed 400g
+set groups global interfaces et-0/0/9 speed 400g
+set groups global interfaces et-0/0/10 speed 400g
+set groups global interfaces et-0/0/11 speed 400g
+set groups global interfaces et-0/0/12 speed 400g
+set groups global interfaces et-0/0/13 speed 400g
+set groups global interfaces et-0/0/14 speed 400g
+set groups global interfaces et-0/0/15 speed 400g
+set groups global interfaces et-0/0/16 speed 400g
+set groups global interfaces et-0/0/17 speed 400g
+set groups global interfaces et-1/0/0 speed 400g
+set groups global interfaces et-1/0/1 speed 400g
+set groups global interfaces et-1/0/2 speed 400g
+set groups global interfaces et-1/0/3 speed 400g
+set groups global interfaces et-1/0/4 speed 400g
+set groups global interfaces et-1/0/5 speed 400g
+set groups global interfaces et-1/0/6 speed 400g
+set groups global interfaces et-1/0/7 speed 400g
+set groups global interfaces et-1/0/8 speed 400g
+set groups global interfaces et-1/0/9 speed 400g
+set groups global interfaces et-1/0/10 speed 400g
+set groups global interfaces et-1/0/11 speed 400g
+set groups global interfaces et-1/0/12 speed 400g
+set groups global interfaces et-1/0/13 speed 400g
+set groups global interfaces et-1/0/14 speed 400g
+set groups global interfaces et-1/0/15 speed 400g
+set groups global interfaces et-1/0/16 speed 400g
+set groups global interfaces et-1/0/17 speed 400g
+set groups global interfaces et-2/0/0 speed 400g
+set groups global interfaces et-2/0/1 speed 400g
+set groups global interfaces et-2/0/2 speed 400g
+set groups global interfaces et-2/0/3 speed 400g
+set groups global interfaces et-2/0/4 speed 400g
+set groups global interfaces et-2/0/5 speed 400g
+set groups global interfaces et-2/0/6 speed 400g
+set groups global interfaces et-2/0/7 speed 400g
+set groups global interfaces et-2/0/8 speed 400g
+set groups global interfaces et-2/0/9 speed 400g
+set groups global interfaces et-2/0/10 speed 400g
+set groups global interfaces et-2/0/11 speed 400g
+set groups global interfaces et-2/0/12 speed 400g
+set groups global interfaces et-2/0/13 speed 400g
+set groups global interfaces et-2/0/14 speed 400g
+set groups global interfaces et-2/0/15 speed 400g
+set groups global interfaces et-2/0/16 speed 400g
+set groups global interfaces et-2/0/17 speed 400g
+set groups global interfaces et-3/0/0 speed 400g
+set groups global interfaces et-3/0/1 speed 400g
+set groups global interfaces et-3/0/2 speed 400g
+set groups global interfaces et-3/0/3 speed 400g
+set groups global interfaces et-3/0/4 speed 400g
+set groups global interfaces et-3/0/5 speed 400g
+set groups global interfaces et-3/0/6 speed 400g
+set groups global interfaces et-3/0/7 speed 400g
+set groups global interfaces et-3/0/8 speed 400g
+set groups global interfaces et-3/0/9 speed 400g
+set groups global interfaces et-3/0/10 speed 400g
+set groups global interfaces et-3/0/11 speed 400g
+set groups global interfaces et-3/0/12 speed 400g
+set groups global interfaces et-3/0/13 speed 400g
+set groups global interfaces et-3/0/14 speed 400g
+set groups global interfaces et-3/0/15 speed 400g
+set groups global interfaces et-3/0/16 speed 400g
+set groups global interfaces et-3/0/17 speed 400g
+set groups global interfaces et-4/0/0 speed 400g
+set groups global interfaces et-4/0/1 speed 400g
+set groups global interfaces et-4/0/2 speed 400g
+set groups global interfaces et-4/0/3 speed 400g
+set groups global interfaces et-4/0/4 speed 400g
+set groups global interfaces et-4/0/5 speed 400g
+set groups global interfaces et-4/0/6 speed 400g
+set groups global interfaces et-4/0/7 speed 400g
+set groups global interfaces et-4/0/8 speed 400g
+set groups global interfaces et-4/0/9 speed 400g
+set groups global interfaces et-4/0/10 speed 400g
+set groups global interfaces et-4/0/11 speed 400g
+set groups global interfaces et-4/0/12 speed 400g
+set groups global interfaces et-4/0/13 speed 400g
+set groups global interfaces et-4/0/14 speed 400g
+set groups global interfaces et-4/0/15 speed 400g
+set groups global interfaces et-4/0/16 speed 400g
+set groups global interfaces et-4/0/17 speed 400g
+set groups global interfaces et-5/0/0 speed 400g
+set groups global interfaces et-5/0/1 speed 400g
+set groups global interfaces et-5/0/2 speed 400g
+set groups global interfaces et-5/0/3 speed 400g
+set groups global interfaces et-5/0/4 speed 400g
+set groups global interfaces et-5/0/5 speed 400g
+set groups global interfaces et-5/0/6 speed 400g
+set groups global interfaces et-5/0/7 speed 400g
+set groups global interfaces et-5/0/8 speed 400g
+set groups global interfaces et-5/0/9 speed 400g
+set groups global interfaces et-5/0/10 speed 400g
+set groups global interfaces et-5/0/11 speed 400g
+set groups global interfaces et-5/0/12 speed 400g
+set groups global interfaces et-5/0/13 speed 400g
+set groups global interfaces et-5/0/14 speed 400g
+set groups global interfaces et-5/0/15 speed 400g
+set groups global interfaces et-5/0/16 speed 400g
+set groups global interfaces et-5/0/17 speed 400g
+set groups global interfaces et-6/0/0 speed 400g
+set groups global interfaces et-6/0/1 speed 400g
+set groups global interfaces et-6/0/2 speed 400g
+set groups global interfaces et-6/0/3 speed 400g
+set groups global interfaces et-6/0/4 speed 400g
+set groups global interfaces et-6/0/5 speed 400g
+set groups global interfaces et-6/0/6 speed 400g
+set groups global interfaces et-6/0/7 speed 400g
+set groups global interfaces et-6/0/8 speed 400g
+set groups global interfaces et-6/0/9 speed 400g
+set groups global interfaces et-6/0/10 speed 400g
+set groups global interfaces et-6/0/11 speed 400g
+set groups global interfaces et-6/0/12 speed 400g
+set groups global interfaces et-6/0/13 speed 400g
+set groups global interfaces et-6/0/14 speed 400g
+set groups global interfaces et-6/0/15 speed 400g
+set groups global interfaces et-6/0/16 speed 400g
+set groups global interfaces et-6/0/17 speed 400g
+set groups global interfaces et-7/0/0 speed 400g
+set groups global interfaces et-7/0/1 speed 400g
+set groups global interfaces et-7/0/2 speed 400g
+set groups global interfaces et-7/0/3 speed 400g
+set groups global interfaces et-7/0/4 speed 400g
+set groups global interfaces et-7/0/5 speed 400g
+set groups global interfaces et-7/0/6 speed 400g
+set groups global interfaces et-7/0/7 speed 400g
+set groups global interfaces et-7/0/8 speed 400g
+set groups global interfaces et-7/0/9 speed 400g
+set groups global interfaces et-7/0/10 speed 400g
+set groups global interfaces et-7/0/11 speed 400g
+set groups global interfaces et-7/0/12 speed 400g
+set groups global interfaces et-7/0/13 speed 400g
+set groups global interfaces et-7/0/14 speed 400g
+set groups global interfaces et-7/0/15 speed 400g
+set groups global interfaces et-7/0/16 speed 400g
+set groups global interfaces et-7/0/17 speed 400g
+set groups global snmp interface re0:mgmt-0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 retain
+set groups global routing-instances mgmt_junos routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 retain
+set groups global routing-instances mgmt_junos routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 retain
+set groups global routing-instances mgmt_junos routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 retain
+set groups global routing-instances mgmt_junos routing-options static route 66.129.233.81/32 no-readvertise
+set groups global routing-options router-id 128.49.101.243
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.233.81/32 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.233.81/32 retain
+set groups global routing-options static route 66.129.233.81/32 no-readvertise
+set apply-groups global
+
+{backup}
+root@PTX4-4-RE0-re1> 
+
+Device: PTX4_4_FPC0_CSPP
+========================================
+show configuration | display set | no-more
+[?2004lno-more: command not found
+Command 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+Command 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+[?2004hroot@PTX4-4-FPC0-CSPP:~# 
+
+Device: vMX1_RE
+========================================
+show configuration | display set | no-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX1_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.101.45/19
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions snmp
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user remote uid 2000
+set groups global system login user remote class super-user
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services ssh root-login allow
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system services netconf ssh
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.144.16 secret "$9$TQ/t1IcSrKAt0IRheK8X7VYgaZDm5zNdiqmTn6"
+set groups global system radius-server 10.48.144.17 secret "$9$GqUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.255.75
+set groups global system ntp server 66.129.255.75
+set groups global system ntp server 172.29.131.60
+set groups global system ntp server 172.29.135.60
+set groups global chassis dump-on-panic
+set groups global interfaces lo0 unit 0 family inet address 128.49.101.45/32 primary
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4910.1045.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:101:45/128 primary
+set groups global snmp location "Systest lab"
+set groups global snmp contact "Jay Lloyd"
+set groups global snmp interface fxp0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.0.0/16 retain
+set groups global routing-options static route 66.129.0.0/16 no-readvertise
+set groups global routing-options router-id 128.49.101.45
+set apply-groups global
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set logical-systems yvm-mx1 interfaces ge-0/0/0 unit 0 family inet address 20.1.1.2/24
+set logical-systems yvm-mx1 interfaces lo0 unit 1 family inet address 20.100.0.1/32
+set logical-systems yvm-mx2 interfaces ge-0/0/1 unit 0 family inet address 21.1.1.2/24
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.1/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.2/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family mpls
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+
+root@vMX1_RE> 
+
+Device: vMX2_RE
+========================================
+show configuration | display set | no-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX2_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.45/19
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions snmp
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user remote uid 2000
+set groups global system login user remote class super-user
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services ssh root-login allow
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system services netconf ssh
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.144.16 secret "$9$TQ/t1IcSrKAt0IRheK8X7VYgaZDm5zNdiqmTn6"
+set groups global system radius-server 10.48.144.17 secret "$9$GqUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.255.75
+set groups global system ntp server 66.129.255.75
+set groups global system ntp server 172.29.131.60
+set groups global system ntp server 172.29.135.60
+set groups global chassis dump-on-panic
+set groups global interfaces lo0 unit 0 family inet address 128.49.99.45/32 primary
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4909.9045.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:99:45/128 primary
+set groups global snmp location "Systest lab"
+set groups global snmp contact "Jay Lloyd"
+set groups global snmp interface fxp0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.0.0/16 retain
+set groups global routing-options static route 66.129.0.0/16 no-readvertise
+set groups global routing-options router-id 128.49.99.45
+set apply-groups global
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set logical-systems yvm-mx1 interfaces ge-0/0/0 unit 0 family inet address 20.1.1.2/24
+set logical-systems yvm-mx1 interfaces lo0 unit 1 family inet address 20.100.0.1/32
+set logical-systems yvm-mx2 interfaces ge-0/0/1 unit 0 family inet address 21.1.1.2/24
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.1/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.2/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family mpls
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+
+root@vMX2_RE> 
+
+Device: vMX3_RE
+========================================
+show configuration | display set | no-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX3_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.54/19
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions snmp
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user remote uid 2000
+set groups global system login user remote class super-user
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services ssh root-login allow
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system services netconf ssh
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.144.16 secret "$9$TQ/t1IcSrKAt0IRheK8X7VYgaZDm5zNdiqmTn6"
+set groups global system radius-server 10.48.144.17 secret "$9$GqUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.255.75
+set groups global system ntp server 66.129.255.75
+set groups global system ntp server 172.29.131.60
+set groups global system ntp server 172.29.135.60
+set groups global chassis dump-on-panic
+set groups global interfaces lo0 unit 0 family inet address 128.49.99.54/32 primary
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4909.9054.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:99:54/128 primary
+set groups global snmp location "Systest lab"
+set groups global snmp contact "Jay Lloyd"
+set groups global snmp interface fxp0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.0.0/16 retain
+set groups global routing-options static route 66.129.0.0/16 no-readvertise
+set groups global routing-options router-id 128.49.99.54
+set apply-groups global
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set logical-systems yvm-mx1 interfaces ge-0/0/0 unit 0 family inet address 20.1.1.2/24
+set logical-systems yvm-mx1 interfaces lo0 unit 1 family inet address 20.100.0.1/32
+set logical-systems yvm-mx2 interfaces ge-0/0/1 unit 0 family inet address 21.1.1.2/24
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.1/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.2/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family mpls
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+
+root@vMX3_RE> 
+
+Device: vMX4_RE
+========================================
+show configuration | display set | no-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX4_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.30/19
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions snmp
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user remote uid 2000
+set groups global system login user remote class super-user
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services ssh root-login allow
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system services netconf ssh
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.144.16 secret "$9$TQ/t1IcSrKAt0IRheK8X7VYgaZDm5zNdiqmTn6"
+set groups global system radius-server 10.48.144.17 secret "$9$GqUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.255.75
+set groups global system ntp server 66.129.255.75
+set groups global system ntp server 172.29.131.60
+set groups global system ntp server 172.29.135.60
+set groups global chassis dump-on-panic
+set groups global interfaces lo0 unit 0 family inet address 128.49.99.30/32 primary
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4909.9030.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:99:30/128 primary
+set groups global snmp location "Systest lab"
+set groups global snmp contact "Jay Lloyd"
+set groups global snmp interface fxp0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.0.0/16 retain
+set groups global routing-options static route 66.129.0.0/16 no-readvertise
+set groups global routing-options router-id 128.49.99.30
+set apply-groups global
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set logical-systems yvm-mx1 interfaces ge-0/0/0 unit 0 family inet address 20.1.1.2/24
+set logical-systems yvm-mx1 interfaces lo0 unit 1 family inet address 20.100.0.1/32
+set logical-systems yvm-mx2 interfaces ge-0/0/1 unit 0 family inet address 21.1.1.2/24
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.1/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.2/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family mpls
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+
+root@vMX4_RE> 
+
+Device: vRR1_RE
+========================================
+show configuration | display set | no-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vRR1_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.52/19
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions snmp
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user remote uid 2000
+set groups global system login user remote class super-user
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services ssh root-login allow
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system services netconf ssh
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.144.16 secret "$9$TQ/t1IcSrKAt0IRheK8X7VYgaZDm5zNdiqmTn6"
+set groups global system radius-server 10.48.144.17 secret "$9$GqUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.255.75
+set groups global system ntp server 66.129.255.75
+set groups global system ntp server 172.29.131.60
+set groups global system ntp server 172.29.135.60
+set groups global chassis dump-on-panic
+set groups global interfaces lo0 unit 0 family inet address 128.49.99.52/32 primary
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4909.9052.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:99:52/128 primary
+set groups global snmp location "Systest lab"
+set groups global snmp contact "Jay Lloyd"
+set groups global snmp interface fxp0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.0.0/16 retain
+set groups global routing-options static route 66.129.0.0/16 no-readvertise
+set groups global routing-options router-id 128.49.99.52
+set apply-groups global
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set logical-systems yvm-mx1 interfaces ge-0/0/0 unit 0 family inet address 20.1.1.2/24
+set logical-systems yvm-mx1 interfaces lo0 unit 1 family inet address 20.100.0.1/32
+set logical-systems yvm-mx2 interfaces ge-0/0/1 unit 0 family inet address 21.1.1.2/24
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.1/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.2/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family mpls
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+
+root@vRR1_RE> 
+
+Device: vRR2_RE
+========================================
+show configuration | display set | no-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vRR2_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.133/19
+set groups global system root-authentication encrypted-password "$1$ZUlES4dp$OUwWo1g7cLoV/aMWpHUnC/"
+set groups global system login class wheel permissions snmp
+set groups global system login user regress uid 928
+set groups global system login user regress class superuser
+set groups global system login user regress shell csh
+set groups global system login user regress authentication encrypted-password "$1$kPU..$w.4FGRAGanJ8U4Yq6sbj7."
+set groups global system login user remote uid 2000
+set groups global system login user remote class super-user
+set groups global system services finger
+set groups global system services ftp
+set groups global system services rlogin
+set groups global system services ssh root-login allow
+set groups global system services telnet
+set groups global system services xnm-clear-text
+set groups global system services netconf ssh
+set groups global system domain-name englab.juniper.net
+set groups global system domain-search englab.juniper.net
+set groups global system domain-search juniper.net
+set groups global system domain-search jnpr.net
+set groups global system time-zone America/Los_Angeles
+set groups global system debugger-on-break
+set groups global system dump-on-panic
+set groups global system authentication-order password
+set groups global system authentication-order radius
+set groups global system name-server 10.49.32.95
+set groups global system name-server 10.49.32.97
+set groups global system radius-server 10.48.144.16 secret "$9$TQ/t1IcSrKAt0IRheK8X7VYgaZDm5zNdiqmTn6"
+set groups global system radius-server 10.48.144.17 secret "$9$GqUqf3nCApOPfQn690ORhSeWL7-boZDylsgoGHk"
+set groups global system syslog host log kernel info
+set groups global system syslog host log any notice
+set groups global system syslog host log pfe info
+set groups global system syslog host log interactive-commands any
+set groups global system syslog file messages kernel info
+set groups global system syslog file messages any notice
+set groups global system syslog file messages authorization info
+set groups global system syslog file messages pfe info
+set groups global system syslog file messages archive world-readable
+set groups global system syslog file security interactive-commands any
+set groups global system syslog file security archive world-readable
+set groups global system processes routing enable
+set groups global system processes ntp enable
+set groups global system processes management enable
+set groups global system processes watchdog enable
+set groups global system processes snmp enable
+set groups global system processes inet-process enable
+set groups global system processes mib-process enable
+set groups global system ntp boot-server 66.129.255.75
+set groups global system ntp server 66.129.255.75
+set groups global system ntp server 172.29.131.60
+set groups global system ntp server 172.29.135.60
+set groups global chassis dump-on-panic
+set groups global interfaces lo0 unit 0 family inet address 128.49.99.133/32 primary
+set groups global interfaces lo0 unit 0 family iso address 47.0005.80ff.f800.0000.0108.0001.1280.4909.9133.00
+set groups global interfaces lo0 unit 0 family inet6 address abcd::128:49:99:133/128 primary
+set groups global snmp location "Systest lab"
+set groups global snmp contact "Jay Lloyd"
+set groups global snmp interface fxp0.0
+set groups global snmp community public authorization read-only
+set groups global snmp community private authorization read-write
+set groups global routing-options static route 172.16.0.0/12 next-hop 10.49.127.254
+set groups global routing-options static route 172.16.0.0/12 retain
+set groups global routing-options static route 172.16.0.0/12 no-readvertise
+set groups global routing-options static route 192.168.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 192.168.0.0/16 retain
+set groups global routing-options static route 192.168.0.0/16 no-readvertise
+set groups global routing-options static route 10.0.0.0/8 next-hop 10.49.127.254
+set groups global routing-options static route 10.0.0.0/8 retain
+set groups global routing-options static route 10.0.0.0/8 no-readvertise
+set groups global routing-options static route 66.129.0.0/16 next-hop 10.49.127.254
+set groups global routing-options static route 66.129.0.0/16 retain
+set groups global routing-options static route 66.129.0.0/16 no-readvertise
+set groups global routing-options router-id 128.49.99.133
+set apply-groups global
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set logical-systems yvm-mx1 interfaces ge-0/0/0 unit 0 family inet address 20.1.1.2/24
+set logical-systems yvm-mx1 interfaces lo0 unit 1 family inet address 20.100.0.1/32
+set logical-systems yvm-mx2 interfaces ge-0/0/1 unit 0 family inet address 21.1.1.2/24
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.1/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family inet address 20.101.0.2/32
+set logical-systems yvm-mx2 interfaces lo0 unit 2 family mpls
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+
+root@vRR2_RE> 
+
+Device: lnx01
+========================================
+show configuration | display set | no-more
+[?2004lCommand 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+Command 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+no-more: command not found
+[?2004hroot@ubuntu-22-04:~# 
+
+Device: lnx02
+========================================
+show configuration | display set | no-more
+[?2004lCommand 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+Command 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+no-more: command not found
+[?2004hroot@ubuntu-22-04:~# 
