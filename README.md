@@ -16,15 +16,11 @@ Python 3.x installed on your system.
 
 Required Python libraries:
 
-                                  subprocess
-                                  
-                                  paramiko
-                                  
-                                  re
-                                  
-                                  time
-                                  
-                                  datetime
+  subprocess
+  paramiko
+  re
+  time
+  datetime
 
 SSH access to the devices with valid credentials.
 
@@ -62,7 +58,7 @@ Steps
 
 Clone or Download the Repository
 
-git clone https://github.com/<your-repo-name>/configuration-backup.git
+git clone https://github.com/kbedford/VMM-Config-Backup.git
 
 cd configuration-backup
 
