@@ -44,6 +44,8 @@ Handles errors like SSH connection failures gracefully.
 
 This function saves the captured configurations into a text file named with the current timestamp, ensuring each backup is unique.
 
+5. You can upload the saved configuration in Git Hub by updating the repo, username, and authentication token.
+
 **How to Use the Script**
 
 Steps
