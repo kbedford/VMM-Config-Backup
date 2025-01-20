@@ -1,0 +1,338 @@
+
+Device: PTX1_1_RE0
+========================================
+show configuration | display set | except "groups gloroot@PTX1-1-RE0-re0> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set system services netconf ssh
+set system services netconf rfc-compliant
+set chassis network-services enhanced-ip
+set interfaces et-0/0/1 description Linux
+set interfaces et-0/0/1 unit 0 family inet address 10.0.21.1/24
+set interfaces et-0/0/3 description to-PTX2
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.1/30
+set interfaces et-0/0/5 description to-PTX3
+set interfaces et-0/0/5 unit 0 family inet address 10.0.0.5/30
+set interfaces et-0/0/7 description to-RR1
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.57/30
+
+{master}
+root@PTX1-1-RE0-re0> 
+
+Device: PTX1_1_RE01
+========================================
+show configuration | display set | except "groups gloroot@PTX1-1-RE0-re1> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set system services netconf ssh
+set system services netconf rfc-compliant
+set chassis network-services enhanced-ip
+set interfaces et-0/0/1 description Linux
+set interfaces et-0/0/1 unit 0 family inet address 10.0.21.1/24
+set interfaces et-0/0/3 description to-PTX2
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.1/30
+set interfaces et-0/0/5 description to-PTX3
+set interfaces et-0/0/5 unit 0 family inet address 10.0.0.5/30
+set interfaces et-0/0/7 description to-RR1
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.57/30
+
+{backup}
+root@PTX1-1-RE0-re1> 
+
+Device: PTX1_1_FPC0_CSPP
+========================================
+show configuration | display set | except "groups globall" | no-more
+[?2004lCommand 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+Command 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+no-more: command not found
+except: command not found
+[?2004hroot@PTX1-1-FPC0-CSPP:~# 
+
+Device: PTX2_2_RE0
+========================================
+show configuration | display set | except "groups gloroot@PTX2-2-RE0-re0> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set interfaces et-0/0/1 description to-PTX3
+set interfaces et-0/0/1 unit 0 family inet address 10.0.0.9/30
+set interfaces et-0/0/3 description to-PTX1
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.2/30
+set interfaces et-0/0/7 description to-PTX4
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.17/30
+set interfaces et-0/0/9 description to-RR1
+set interfaces et-0/0/9 unit 0 family inet address 10.0.0.65/30
+
+{master}
+root@PTX2-2-RE0-re0> 
+
+Device: PTX2_2_RE01
+========================================
+show configuration | display set | except "groups gloroot@PTX2-2-RE0-re1> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set interfaces et-0/0/1 description to-PTX3
+set interfaces et-0/0/1 unit 0 family inet address 10.0.0.9/30
+set interfaces et-0/0/3 description to-PTX1
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.2/30
+set interfaces et-0/0/7 description to-PTX4
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.17/30
+set interfaces et-0/0/9 description to-RR1
+set interfaces et-0/0/9 unit 0 family inet address 10.0.0.65/30
+
+{backup}
+root@PTX2-2-RE0-re1> 
+
+Device: PTX2_2_FPC0_CSPP
+========================================
+show configuration | display set | except "groups globall" | no-more
+[?2004lCommand 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+except: command not found
+no-more: command not found
+Command 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+[?2004hroot@PTX2-2-FPC0-CSPP:~# 
+
+Device: PTX3_3_RE0
+========================================
+show configuration | display set | except "groups gloroot@PTX3-3-RE0-re0> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set interfaces et-0/0/1 description to-PTX1
+set interfaces et-0/0/1 unit 0 family inet address 10.0.0.6/30
+set interfaces et-0/0/3 description to-PTX2
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.10/30
+set interfaces et-0/0/7 description to-vMX1
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.13/30
+set interfaces et-0/0/9 description to-RR1
+set interfaces et-0/0/9 unit 0 family inet address 10.0.0.21/30
+set interfaces et-0/0/11 description to-PTX4
+set interfaces et-0/0/11 unit 0 family inet address 10.0.0.61/30
+
+{master}
+root@PTX3-3-RE0-re0> 
+
+Device: PTX3_3_RE01
+========================================
+show configuration | display set | except "groups gloroot@PTX3-3-RE0-re1> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set interfaces et-0/0/1 description to-PTX1
+set interfaces et-0/0/1 unit 0 family inet address 10.0.0.6/30
+set interfaces et-0/0/3 description to-PTX2
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.10/30
+set interfaces et-0/0/7 description to-vMX1
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.13/30
+set interfaces et-0/0/9 description to-RR1
+set interfaces et-0/0/9 unit 0 family inet address 10.0.0.21/30
+set interfaces et-0/0/11 description to-PTX4
+set interfaces et-0/0/11 unit 0 family inet address 10.0.0.61/30
+
+{backup}
+root@PTX3-3-RE0-re1> 
+
+Device: PTX3_3_FPC0_CSPP
+========================================
+show configuration | display set | except "groups globall" | no-more
+[?2004lCommand 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+no-more: command not found
+except: command not found
+Command 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+[?2004hroot@PTX3-3-FPC0-CSPP:~# 
+
+Device: PTX4_4_RE0
+========================================
+show configuration | display set | except "groups gloroot@PTX4-4-RE0-re0> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set interfaces et-0/0/1 description to-PTX2
+set interfaces et-0/0/1 unit 0 family inet address 10.0.0.18/30
+set interfaces et-0/0/3 description to-PTX3
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.22/30
+set interfaces et-0/0/7 description to-vMX1
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.26/30
+set interfaces et-0/0/9 description to-vMX3
+set interfaces et-0/0/9 unit 0 family inet address 10.0.0.38/30
+set interfaces et-0/0/10 description to-vMX2
+set interfaces et-0/0/10 unit 0 family inet address 10.0.0.30/30
+set interfaces et-0/0/11 description to-RR2
+set interfaces et-0/0/11 unit 0 family inet address 10.0.0.77/30
+
+{master}
+root@PTX4-4-RE0-re0> 
+
+Device: PTX4_4_RE01
+========================================
+show configuration | display set | except "groups gloroot@PTX4-4-RE0-re1> ...splay set | except "groups glob                      al" | no-more 
+set version 23.4R2.14-EVO
+set interfaces et-0/0/1 description to-PTX2
+set interfaces et-0/0/1 unit 0 family inet address 10.0.0.18/30
+set interfaces et-0/0/3 description to-PTX3
+set interfaces et-0/0/3 unit 0 family inet address 10.0.0.22/30
+set interfaces et-0/0/7 description to-vMX1
+set interfaces et-0/0/7 unit 0 family inet address 10.0.0.26/30
+set interfaces et-0/0/9 description to-vMX3
+set interfaces et-0/0/9 unit 0 family inet address 10.0.0.38/30
+set interfaces et-0/0/10 description to-vMX2
+set interfaces et-0/0/10 unit 0 family inet address 10.0.0.30/30
+set interfaces et-0/0/11 description to-RR2
+set interfaces et-0/0/11 unit 0 family inet address 10.0.0.77/30
+
+{backup}
+root@PTX4-4-RE0-re1> 
+
+Device: PTX4_4_FPC0_CSPP
+========================================
+show configuration | display set | except "groups globall" | no-more
+[?2004lCommand 'display' not found, but can be installed with:
+apt install graphicsmagick-imagemagick-compat  # version 1.4+really1.3.38-1ubuntu0.1, or
+apt install imagemagick-6.q16                  # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+apt install imagemagick-6.q16hdri              # version 8:6.9.11.60+dfsg-1.3ubuntu0.22.04.5
+Command 'show' not found, but can be installed with:
+apt install mailutils-mh  # version 1:3.14-1, or
+apt install mmh           # version 0.4-4
+apt install nmh           # version 1.7.1-11
+except: command not found
+no-more: command not found
+[?2004hroot@PTX4-4-FPC0-CSPP:~# 
+
+Device: vMX1_RE
+========================================
+show configuration | display set | except "groups global" | root@vMX1_RE> ...splay set | except "groups global" | n                      o-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX1_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.101.45/19
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+set interfaces ge-0/0/0 description to-PTX3
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.14/30
+set interfaces ge-0/0/1 description to-PTX4
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.26/30
+set interfaces ge-0/0/2 description to-vMX3
+set interfaces ge-0/0/2 unit 0 family inet address 10.0.0.33/30
+set interfaces ge-0/0/3 description to-vMX1
+set interfaces ge-0/0/3 unit 0 family inet address 10.0.0.65/30
+
+root@vMX1_RE> 
+
+Device: vMX2_RE
+========================================
+show configuration | display set | except "groups global" | root@vMX2_RE> ...splay set | except "groups global" | n                      o-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX2_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.45/19
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+set interfaces ge-0/0/0 description to-PTX4
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.30/30
+set interfaces ge-0/0/1 description to-vMX3
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.41/30
+set interfaces ge-0/0/2 description to-vMX4
+set interfaces ge-0/0/2 unit 0 family inet address 10.0.0.49/30
+set interfaces ge-0/0/3 description to-vMX1
+set interfaces ge-0/0/3 unit 0 family inet address 10.0.0.81/30
+
+root@vMX2_RE> 
+
+Device: vMX3_RE
+========================================
+show configuration | display set | except "groups global" | root@vMX3_RE> ...splay set | except "groups global" | n                      o-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX3_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.54/19
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+set interfaces ge-0/0/0 description to-vMX1
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.30/30
+set interfaces ge-0/0/1 description to-PTX4
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.38/30
+set interfaces ge-0/0/2 description to-vMX2
+set interfaces ge-0/0/2 unit 0 family inet address 10.0.0.42/30
+set interfaces ge-0/0/3 description to-vMX4
+set interfaces ge-0/0/3 unit 0 family inet address 10.0.0.45/30
+set interfaces ge-0/0/4 description to-RR2
+set interfaces ge-0/0/4 unit 0 family inet address 10.0.0.85/30
+
+root@vMX3_RE> 
+
+Device: vMX4_RE
+========================================
+show configuration | display set | except "groups global" | root@vMX4_RE> ...splay set | except "groups global" | n                      o-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vMX4_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.30/19
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+set interfaces ge-0/0/0 description to-vMX3
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.46/30
+set interfaces ge-0/0/1 description to-vMX2
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.50/30
+set interfaces ge-0/0/2 description to-lnx02-private35
+set interfaces ge-0/0/2 unit 0 family inet address 10.0.0.101/30
+set interfaces ge-0/0/3 description to-RR2
+set interfaces ge-0/0/3 unit 0 family inet address 10.0.0.90/30
+
+root@vMX4_RE> 
+
+Device: vRR1_RE
+========================================
+show configuration | display set | except "groups global" | root@vRR1_RE> ...splay set | except "groups global" | n                      o-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vRR1_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.52/19
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+set interfaces ge-0/0/0 description to-PTX1
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.57/30
+set interfaces ge-0/0/1 description to-PTX3
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.61/30
+set interfaces ge-0/0/2 description to-vMX1
+set interfaces ge-0/0/2 unit 0 family inet address 10.0.0.65/30
+set interfaces ge-0/0/3 description to-PTX2
+set interfaces ge-0/0/3 unit 0 family inet address 10.0.0.69/30
+set interfaces ge-0/0/4 description to-RR2-private28
+set interfaces ge-0/0/4 unit 0 family inet address 10.0.0.73/30
+
+root@vRR1_RE> 
+
+Device: vRR2_RE
+========================================
+show configuration | display set | except "groups global" | root@vRR2_RE> ...splay set | except "groups global" | n                      o-more 
+set version 20.3X75-D42.21
+set groups member0 system host-name vRR2_RE
+set groups member0 system backup-router 10.49.127.254
+set groups member0 interfaces fxp0 unit 0 family inet address 10.49.99.133/19
+set apply-groups member0
+set system ports console log-out-on-disconnect
+set chassis fpc 0 pic 0 tunnel-services bandwidth 1g
+set interfaces ge-0/0/0 description to-PTX4
+set interfaces ge-0/0/0 unit 0 family inet address 10.0.0.77/30
+set interfaces ge-0/0/1 description to-vMX2
+set interfaces ge-0/0/1 unit 0 family inet address 10.0.0.81/30
+set interfaces ge-0/0/2 description to-vMX3
+set interfaces ge-0/0/2 unit 0 family inet address 10.0.0.85/30
+set interfaces ge-0/0/3 description to-vMX4
+set interfaces ge-0/0/3 unit 0 family inet address 10.0.0.89/30
+set interfaces ge-0/0/4 description to-RR2-private28
+set interfaces ge-0/0/4 unit 0 family inet address 10.0.0.74/30
+
+root@vRR2_RE> 
