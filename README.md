@@ -4,19 +4,19 @@ This Python script automates the process of backing up configurations from netwo
 
 **Prerequisites**
 
-Python 3.x installed on your system.
+1. Python 3.x installed on your system.
 
-Required Python libraries:
+2. Required Python libraries:
 
-  subprocess
-  paramiko
-  re
-  time
-  datetime
+      subprocess
+      paramiko
+      re
+      time
+      datetime
 
-SSH access to the devices with valid credentials.
+3. SSH access to the devices with valid credentials.
 
-vmm command-line tool installed and accessible in your environment.
+4. vmm command-line tool installed and accessible in your environment.
 
 **Script Functionality**
 
@@ -32,13 +32,13 @@ This function performs a ping test using the vmm ping command to identify which 
 
 This function:
 
-Establishes an SSH connection to each alive device using the paramiko library.
-
-Sends commands to enter CLI mode and capture the configuration.
-
-Retrieves the configuration using the show configuration | display set | no-more command.
-
-Handles errors like SSH connection failures gracefully.
+  1. Establishes an SSH connection to each alive device using the paramiko library.
+  
+  2. Sends commands to enter CLI mode and capture the configuration.
+  
+  3. Retrieves the configuration using the show configuration | display set | no-more command.
+  
+  4. Handles errors like SSH connection failures gracefully.
 
 4. save_configurations_to_file(configurations)
 
