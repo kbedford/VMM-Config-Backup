@@ -1,6 +1,6 @@
 **Overview**
 
-This Python script automates the process of backing up configurations from network devices. It performs the following tasks: Retrieves IP addresses of devices using the vmm ip command. Check the availability of these devices using the vmm ping command. Connects to alive devices via SSH and captures their configurations. Saves the configurations to a timestamped file for record-keeping.
+This Python program automates the process of backing up configurations from network devices. It performs the following tasks: Retrieves IP addresses of devices using the vmm ip command. Check the availability of these devices using the vmm ping command. Connects to alive devices via SSH and captures their configurations. Saves the configurations to a timestamped file for record-keeping.
 
 **Prerequisites**
 
