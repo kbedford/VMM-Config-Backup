@@ -32,13 +32,13 @@ This function performs a ping test using the vmm ping command to identify which 
 
 This function:
 
-  1. Establishes an SSH connection to each alive device using the paramiko library.
-  
-  2. Sends commands to enter CLI mode and capture the configuration.
-  
-  3. Retrieves the configuration using the show configuration | display set | no-more command.
-  
-  4. Handles errors like SSH connection failures gracefully.
+        1. Establishes an SSH connection to each alive device using the paramiko library.
+        
+        2. Sends commands to enter CLI mode and capture the configuration.
+        
+        3. Retrieves the configuration using the show configuration | display set | no-more command.
+        
+        4. Handles errors like SSH connection failures gracefully.
 
 4. save_configurations_to_file(configurations)
 
