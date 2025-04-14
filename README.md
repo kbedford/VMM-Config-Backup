@@ -4,19 +4,19 @@ This Python script automates the process of backing up configurations from netwo
 
 **Prerequisites**
 
-1. Python 3.x installed on your system.
-
-2. Required Python libraries:
-
-      subprocess
-      paramiko
-      re
-      time
-      datetime
-
-3. SSH access to the devices with valid credentials.
-
-4. vmm command-line tool installed and accessible in your environment.
+      1. Python 3.x installed on your system.
+      
+      2. Required Python libraries:
+      
+            subprocess
+            paramiko
+            re
+            time
+            datetime
+      
+      3. SSH access to the devices with valid credentials.
+      
+      4. vmm command-line tool installed and accessible in your environment.
 
 **Script Functionality**
 
