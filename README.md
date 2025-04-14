@@ -18,7 +18,7 @@ This Python script automates the process of backing up configurations from netwo
       
       4. vmm command-line tool installed and accessible in your environment.
 
-**Script Functionality**
+**Program Functionality**
 
 1. get_vmm_ip_addresses()
 
